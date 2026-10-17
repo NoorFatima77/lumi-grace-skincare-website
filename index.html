@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lumi Grace | Vitamin C Serum</title>
+
+    <meta
+        name="description"
+        content="Discover Lumi Grace Vitamin C Serum, explore its ingredients, and order through WhatsApp."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="announcement">
+        DISCOVER LUMI GRACE · VITAMIN C SERUM
+    </div>
+
+    <header class="navbar">
+        <a href="#home" class="logo">LUMI GRACE</a>
+
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#product">Our Product</a>
+            <a href="#ingredients">Ingredients</a>
+            <a href="#about">About Us</a>
+        </nav>
+
+        <a href="#product" class="nav-button">Shop Now</a>
+
+        <div class="cart-summary" aria-live="polite">
+            Cart: <span id="cart-count">0</span> item(s)
+            <span class="cart-divider">|</span>
+            Total: Rs. <span id="cart-total">0</span>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+                <p class="eyebrow">YOUR SKINCARE JOURNEY BEGINS</p>
+
+                <h1>
+                    Discover Your
+                    <br>
+                    <span>Natural Glow.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Meet Lumi Grace Vitamin C Serum.
+                    Discover a new addition to your skincare routine.
+                </p>
+
+                <a href="#product" class="primary-button">
+                    Shop Our Serum
+                </a>
+
+                <p class="launch-note">
+                    YOUR SKINCARE ESSENTIAL AWAITS
+                </p>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="images/lumigracepic1.jpeg"
+                    alt="Lumi Grace Vitamin C Serum"
+                    class="serum-image"
+                >
+            </div>
+
+        </section>
+
+
+        <!-- PRODUCT SECTION -->
+
+        <section class="product-section" id="product">
+
+            <p class="eyebrow">MEET YOUR SKINCARE ESSENTIAL</p>
+
+            <h2>Lumi Grace Vitamin C Serum</h2>
+
+            <div class="product-gallery">
+                <img
+                    src="images/lumigracepic2.jpeg"
+                    alt="Lumi Grace Vitamin C Serum product"
+                    class="product-detail-image"
+                >
+            </div>
+
+            <p class="price">Rs. 999</p>
+
+            <p class="delivery">
+                Free delivery advertised by the brand
+            </p>
+
+            <p class="product-description">
+                Explore Lumi Grace Vitamin C Serum and discover
+                the ingredients listed for your skincare routine.
+            </p>
+
+            <div class="product-actions">
+
+                <button
+                    id="wishlist-button"
+                    class="primary-button"
+                    type="button"
+                >
+                    ♡ Add to Wishlist
+                </button>
+
+                <p id="wishlist-message" aria-live="polite"></p>
+
+                <div class="quantity-selector">
+                    <label for="product-quantity">Quantity:</label>
+
+                    <input
+                        type="number"
+                        id="product-quantity"
+                        min="1"
+                        max="10"
+                        value="1"
+                        inputmode="numeric"
+                    >
+                </div>
+
+                <p class="selected-price">
+                    Selected price: Rs.
+                    <span id="selected-price">999</span>
+                </p>
+
+                <button
+                    id="add-to-cart"
+                    class="primary-button"
+                    type="button"
+                >
+                    Add to Cart
+                </button>
+
+                <p id="cart-message" aria-live="polite"></p>
+
+                <div class="cart-controls">
+                    <button id="remove-from-cart" type="button">
+                        Remove One
+                    </button>
+
+                    <button id="clear-cart" type="button">
+                        Clear Cart
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WHATSAPP CHECKOUT SECTION -->
+
+        <section class="product-section" id="checkout">
+
+            <p class="eyebrow">YOUR ORDER, YOUR WAY</p>
+
+            <h2>Delivery Details</h2>
+
+            <p class="product-description">
+                Enter your details below to prepare your order.
+                You will review and send the order through WhatsApp.
+                No online payment is required on this website.
+            </p>
+
+            <form id="checkout-form">
+
+                <div class="checkout-field">
+                    <label for="customer-name">Full Name</label>
+                    <input
+                        type="text"
+                        id="customer-name"
+                        name="customerName"
+                        autocomplete="name"
+                        placeholder="Enter your full name"
+                        required
+                        maxlength="100"
+                    >
+                </div>
+
+                <div class="checkout-field">
+                    <label for="customer-phone">Phone Number</label>
+                    <input
+                        type="tel"
+                        id="customer-phone"
+                        name="customerPhone"
+                        autocomplete="tel"
+                        placeholder="03XXXXXXXXX"
+                        required
+                        maxlength="20"
+                    >
+                </div>
+
+                <div class="checkout-field">
+                    <label for="customer-city">City</label>
+                    <input
+                        type="text"
+                        id="customer-city"
+                        name="customerCity"
+                        autocomplete="address-level2"
+                        placeholder="Enter your city"
+                        required
+                        maxlength="100"
+                    >
+                </div>
+
+                <div class="checkout-field">
+                    <label for="customer-address">Complete Delivery Address</label>
+                    <textarea
+                        id="customer-address"
+                        name="customerAddress"
+                        autocomplete="street-address"
+                        placeholder="House number, street, area and nearby landmark"
+                        rows="4"
+                        required
+                        maxlength="500"
+                    ></textarea>
+                </div>
+
+                <div class="checkout-field">
+                    <label for="order-notes">Additional Instructions (Optional)</label>
+                    <textarea
+                        id="order-notes"
+                        name="orderNotes"
+                        placeholder="Any delivery instructions?"
+                        rows="2"
+                        maxlength="300"
+                    ></textarea>
+                </div>
+
+                <div class="checkout-summary">
+                    <p>Product: Lumi Grace Vitamin C Serum</p>
+                    <p>Price per serum: Rs. 999</p>
+                    <p>Quantity in cart: <span id="checkout-quantity">0</span></p>
+                    <p>
+                        Product subtotal: Rs.
+                        <span id="checkout-total">0</span>
+                    </p>
+                    <p>
+                        Delivery charges and final payable amount
+                        will be confirmed by the business.
+                    </p>
+                </div>
+
+                <button
+                    type="submit"
+                    class="primary-button"
+                    id="checkout-whatsapp"
+                >
+                    Continue to WhatsApp
+                </button>
+
+                <p id="checkout-message" aria-live="polite"></p>
+
+            </form>
+
+        </section>
+
+
+        <!-- INGREDIENTS SECTION -->
+
+        <section class="ingredients-section" id="ingredients">
+
+            <p class="eyebrow">GET TO KNOW YOUR SERUM</p>
+
+            <h2>Ingredients, thoughtfully selected.</h2>
+
+            <p class="ingredients-intro">
+                Explore the ingredients listed for Lumi Grace Vitamin C Serum.
+            </p>
+
+            <div class="ingredients-list">
+                <div class="ingredient">Sodium Ascorbyl Phosphate</div>
+                <div class="ingredient">Alpha Arbutin</div>
+                <div class="ingredient">Niacinamide</div>
+                <div class="ingredient">Sodium Hyaluronate</div>
+                <div class="ingredient">D-Panthenol</div>
+                <div class="ingredient">Glycerin</div>
+                <div class="ingredient">Licorice Root Extract</div>
+                <div class="ingredient">Aqua (Water)</div>
+            </div>
+
+            <p class="ingredients-note">
+                This is a selection of the ingredients provided by the brand.
+                Please check the product packaging for the complete ingredient list.
+            </p>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+
+        <section class="about-section" id="about">
+
+            <p class="eyebrow">THE LUMI GRACE STORY</p>
+
+            <h2>Skincare, with intention.</h2>
+
+            <p>
+                Discover Lumi Grace Vitamin C Serum.
+                Explore our featured product, review its listed ingredients,
+                and make Lumi Grace part of your skincare journey.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p class="footer-logo">LUMI GRACE</p>
+
+        <p>Discover your own skincare journey.</p>
+
+        <p class="copyright">
+            © 2026 Lumi Grace. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
